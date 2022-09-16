@@ -1,3 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
+	margin: 0;
 	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	color: #404040;
+	line-height: 1.6;
+}
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+strong {
+	font-weight: 700;
+}
+
+.accent-color {
+	color: #ffe600;
+}
+
+.hero-title {
+	font-size: 1.5rem;
+	line-height: 1.5;
+	margin-bottom: 0;
+}
+
+.section-title {
+	font-size: 1.25rem;
+	color: #000;
+}
+
+/* button */
+
+.btn {
+	padding: 0.7em 1.75em;
+	font-weight: 700;
+	display: inline-block;
+	margin-top: 1em;
+}
+
+.btn-primary {
+	background: #ffe600;
+	color: #000;
+}
+
+/*  GENERAL LAYOUT */
+
+.main-grid {
+	display: grid;
+	grid-template-columns: minmax(1em, 1fr) minmax(1em, 500px) minmax(1em, 1fr);
+}
+
+/* FOOTER */
+
+.footer {
+	background: #ebebeb;
+	padding: 4em 0;
+}
+
+.footer-main,
+.social-list {
+	grid-column: 2 / -2;
+	text-align: center;
+}
+
+.social-list {
+	order: -1;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 2em;
+}
+
+.fa-brands {
+	color: #000;
+	font-size: 1.75rem;
+	margin: 0 0.5em;
+}
+
+.fa-brands:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+/*  HERO AREA */
+
+.hero {
+	background-image: url(/img/hero-bg.jpg);
+	color: #fff;
+	padding: 4em 0;
+}
+
+.hero > * {
+	grid-column: 2 / -2;
+}
+
+/* INFO AREA */
+.info {
+	padding: 4em 0;
+}
+
+.col {
+	grid-column: 2 / -2;
+	text-align: center;
 }
